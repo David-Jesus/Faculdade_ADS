@@ -1,0 +1,63 @@
+package Exercícos_Revisão;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.Scanner;
+
+public class data {
+	public static void main(String[] args) {
+		Calendar cal = GregorianCalendar.getInstance();
+		int anoAtual = cal.get(Calendar.YEAR);
+
+		int mesAtual = cal.get(Calendar.MONTH);
+
+		int diaAtual = cal.get(Calendar.DAY_OF_MONTH);
+
+		/*
+		 * Scanner in = new Scanner(System.in);
+		 * System.out.println("Dia, mes e ano de nascimento"); int diaNasc =
+		 * in.nextInt(); int mesNasc = in.nextInt(); int anoNasc = in.nextInt(); int
+		 * idade = (anoAtual - anoNasc); System.out.println("voce tem: " + idade +
+		 * " anos.");
+		 * 
+		 * if (idade < 18) { System.out.printf("Menor de idade"); } else {
+		 * System.out.printf("Maior de idade\n*"); } System.out.println(anoAtual+"\n");
+		 * System.out.println(mesAtual+"\n"); System.out.println(diaAtual);
+		 */
+
+		// System.out.println(mesAtual);
+
+		final int teste = mesAtual;
+		mesAtual += 1;
+		int x = 12;
+		while (mesAtual != teste) {
+
+			if (x >= 0) {
+				System.out.println("Voce possui " + x + " meses de auxilio.\n");
+			}
+
+			if (mesAtual > 11) {
+				mesAtual = -1;
+			}
+			mesAtual++;
+			x--;
+		}
+		System.out.println(mesAtual);
+		/*
+		 * try {
+		 * 
+		 * mesAtual = 5;
+		 * 
+		 * while(mesAtual < 12) {
+		 * 
+		 * 
+		 * if(mesAtual < 12) { System.out.println("Ola"); } else {
+		 * System.out.println("Num deu"); }
+		 * 
+		 * mesAtual ++; } } finally {
+		 * 
+		 * }
+		 */
+
+	}
+}

@@ -1,0 +1,26 @@
+package POO2;
+
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+
+public class ValidadeCadastro{
+
+	 static Cadastro cad;
+	static Calendar cal = GregorianCalendar.getInstance();
+	static int mesAtual = cal.get(Calendar.MONTH) + 1;
+	int anoExpericao = cal.get(Calendar.YEAR) + 1;
+	
+	public ValidadeCadastro(Cadastro cad) {
+		this.cad = cad;
+	}
+	public static String getvalidadeCadastro() {
+		if(cad.getStatus() == true) { //foi cadastrado
+			
+			while(mesAtual+1 < 12)
+			{
+			   return "Cadastros realizados";
+			}
+		}
+		return "";
+	}
+}
