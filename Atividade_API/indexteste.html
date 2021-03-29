@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <title>Teste API Google</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="conversor">
+            <div class="opcao">
+                <h2>De: </h2>
+                <select class="opcoes1" id="selecao">
+                    <option value="USD">USD - EUA</option>
+                    <option value="BRL">BRL - BRASIL</option>
+                    <option value="EUR">EUR - ESPANHA</option>
+                    <option value="BTC">BTC - BITCOIN</option>
+                </select>
+            </div>
+
+            <div class="opcao">
+                <h2>Para: </h2>
+                <select class="opcoes2" id="selecao">
+                    <option value="BRL">BRL - BRASIL</option>
+                    <option value="USD">USD - EUA</option>
+                    <option value="EUR">EUR - ESPANHA</option>
+                    <option value="BTC">BTC - BITCOIN</option> 
+                </select>
+            </div>
+
+
+            <div class="opcao">
+                <input type="text" id="valor" placeholder="Digite o valor...">
+                <button type="button" class="btn">Converter</button>
+            </div>
+
+            <h2>Resultado</h2>
+            <input type="text" class="resultado">
+        </div>
+    </div>
+</body>
+
+</html>
